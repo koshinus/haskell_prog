@@ -1,0 +1,2 @@
+split4 (x:l) = ([x | x <- l, (x `mod` 3 == 0)],[x | x <- l, (x `mod` 3 == 1)],[x | x <- l,(x `mod` 3 == 2)])
+split3 l = (filter (\x -> x `mod` 3 == 0) l,filter (\x -> x `mod` 3 == 1) l,filter (\x -> x `mod` 3 == 2) l)
